@@ -1,0 +1,93 @@
+.frozen-bar {
+	width: 95px;
+	position: fixed;
+	background: #f3f5ed;
+	top: 0px;
+	bottom: 0px;
+	z-index: 1000;
+}
+
+li {
+	list-style: none;
+}
+
+nav {
+	text-align: center;
+	font-size: 12px;
+}
+
+nav > li {
+	opacity: 0.7;
+}
+
+nav >li > a {
+	color: #cb7320;
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.icon-home:before {
+	content: "";
+	display:block; 
+	margin: 0px auto;
+	background: url('../images/nav-icons.png') no-repeat 0 0;
+	width: 22px;
+	height: 20px;
+}
+
+.icon-about:before {
+	content: "";
+	display:block; 
+	margin: 0px auto;
+	background: url('../images/nav-icons.png') no-repeat 0 -21px;
+	width: 24px;
+	height: 23px;
+}
+
+.icon-blog:before {
+	content: "";
+	display:block; 
+	margin: 0px auto;
+	background: url('../images/nav-icons.png') no-repeat 0 -45px;
+	width: 24px;
+	height: 18px;
+}
+
+.icon-services:before {
+	content: "";
+	display:block; 
+	margin: 0px auto;
+	background: url('../images/nav-icons.png') no-repeat 0 -64px;
+	width: 25px;
+	height: 24px;
+}
+
+.icon-partners:before {
+	content: "";
+	display:block; 
+	margin: 0px auto;
+	background: url('../images/nav-icons.png') no-repeat 0 -89px;
+	width: 31px;
+	height: 20px;
+}
+
+.icon-involved:before {
+	content: "";
+	display:block; 
+	margin: 0px auto;
+	background: url('../images/nav-icons.png') no-repeat 0 -110px;
+	width: 21px;
+	height: 27px;
+}
+
+.icon-gear:before {
+	content: "";
+	display:block; 
+	margin: 0px auto;
+	background: url('../images/nav-icons.png') no-repeat 0 -138px;
+	width: 34px;
+	height: 18px;
+
+}
+

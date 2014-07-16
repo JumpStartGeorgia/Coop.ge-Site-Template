@@ -1,0 +1,37 @@
+@media only screen 
+(max-width : 1024px) {
+	
+	.frozen-bar {
+		width: 70px;
+	}
+
+	.logo {
+		background: #f3f5ed url('../images/logo.png') no-repeat center;
+		background-size: 120px 120px;
+		width: 120px;
+		height: 120px;
+		margin-top: 12px;
+		margin-bottom: 15px;
+		margin-left: 10px;
+	}
+
+	#menu {
+		font-size: 12px;
+	}
+	
+	#menu >li > a {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	
+	#language {
+		bottom: 10px;
+		left: 3px;
+	}
+
+	#language a {
+		font-size: 11px;
+	}
+	
+	
+}

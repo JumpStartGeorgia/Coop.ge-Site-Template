@@ -1,0 +1,86 @@
+.frozen-bar {
+	position: relative;
+	height: 60px;
+	min-width: 100%;
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	/*box-shadow: 0px 1px 10px #b4b4b4; */
+}
+
+.logo {
+	background: #f3f5ed url('../images/logo.png') no-repeat center;
+	background-size: 120px 120px;
+	width: 120px;
+	height: 120px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	/*position: relative;
+	box-shadow: 0px 1px 10px #b4b4b4;
+	z-index: 800 !important;  */
+}
+
+#menu-wrapper {
+	width: 90px;
+	height: 60px;
+	top: 0;
+	position: absolute;
+}
+
+#menu-wrapper:hover #menu{
+	display: block !important;
+}
+
+#menu-wrapper > a {
+	display: block;
+	background: url('../images/menu-iphone.png') no-repeat;
+	margin-left: 35px;
+	margin-top: 20px;
+	width: 24px;
+	height: 18px;
+}
+
+#menu {
+	background: #f3f5ed;
+	font-size: 14px;
+	width: 90px;
+	position: absolute;
+	top: 60px;
+	display: none;
+}
+
+
+#menu >li > a {
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+#language {
+	bottom: auto;
+	left: auto;
+	top: 18px;
+	right: 18px;
+}
+
+	
+#header {
+  padding-left: 0px !important;
+  padding-top: 60px;
+}
+
+#slogan {
+	background-color: rgba(255,255,255,0.85);
+}
+
+#slogan h1 {
+	font-size: 1.1em;
+	font-family: 'source_sans_prolight';
+	width: 165px;
+	height: 40px;
+}
+
+
+

@@ -190,12 +190,12 @@ li {
 #footer {
 	bottom: 0;
 	position: absolute;
-	margin-bottom: 20px;	
+	
 }
+
 
 #contact {
 	background: url('../images/nav-icons.png') no-repeat 0 -174px;
-	width: 30px;
 	height: 30px;
 	margin-left: 20px;
 	padding-left: 11px;
@@ -210,13 +210,14 @@ li {
 }
 
 #contact span  {
-	display: block;
-	float: left;
+	display: inline-block;
+	vertical-align:top;
     letter-spacing: auto;
     font-family: 'source_sans_prolight';
     font-size: 16px;
     line-height: 1;
-    clear:both;
+    margin-right: 25px;
+    padding-bottom: 20px;
 }
 
 #contact > span > i {

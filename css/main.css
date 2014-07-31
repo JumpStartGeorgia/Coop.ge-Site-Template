@@ -33,25 +33,85 @@ li {
 	line-height: 1.1;
 }
 
-#menu > li {
+#menu li {
 	opacity: 0.7;
 }
 
-#menu >li > a {
+#menu li a {
 	color: #cb7320;
 	display: block;
 	padding-top: 8px;
 	padding-bottom: 8px;
 }
 
-#menu >li:hover {
+#menu li:hover, #menu li:active {
 	background-color: #e7ebd9;
 	opacity: 1;
 }
 
-#menu > li:hover a {
+#menu li:hover a, #menu li:active a {
 	color: #cb7320;
 	text-decoration: none;
+}
+
+#menu li#services{
+  position: relative;
+}
+
+#menu li#services > div{
+  position: absolute;
+  width: 300px;
+  height: 75px;
+  top: 0;
+  left: -300px;
+  padding-left: 5px;
+	opacity: 0;
+  transition: all 0.5s ease;
+}
+#menu li#services > div > ul{
+  height: 75px;
+  padding-left: 0;
+	background: #eff1e4;
+}
+#menu li#services > div.active{
+  left: 95px;
+	opacity: 1;
+}
+#menu li#services > div > ul > li{
+  display: inline-block;
+  width: 95px;
+	background: #eff1e4;
+  vertical-align: bottom;
+}
+#menu li#services > div > ul > li:hover, #menu li#services > div > ul > li:active {
+	background: #eff1e4;
+	opacity: 1;
+}
+
+#menu li#services > div > ul > li > div{
+  position: relative;
+}
+#menu li#services > div > ul > li a{
+	padding-top: 18px;
+}
+
+#menu li#services > div > ul > li:hover > div:after, #menu li#services > div > ul > li:active > div:after{
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #fff;
+	position: absolute;
+	top: 0;
+	left: 37.5px;
+	content: "";
+}
+
+#menu li#services > div > ul > li:nth-child(2):hover > div:after, #menu li#services > div > ul > li:nth-child(2):active > div:after{
+	top: -3px;
+}
+#menu li#services > div > ul > li:nth-child(3):hover > div:after, #menu li#services > div > ul > li:nth-child(3):active > div:after{
+	top: -1px;
 }
 
 .icon-home:before {
@@ -125,7 +185,40 @@ li {
 
 }
 
-#menu > li.active {
+.icon-for-business:before {
+	content: "";
+	display:block; 
+	margin: 0px auto;
+	background: url('../images/nav-icons.png') no-repeat 0 -205px;
+	margin-bottom: 5px;
+	width: 8px;
+	height: 28px;
+
+}
+
+.icon-for-home:before {
+	content: "";
+	display:block; 
+	margin: 0px auto;
+	background: url('../images/nav-icons.png') no-repeat 0 -234px;
+	margin-bottom: 9px;
+	width: 19px;
+	height: 21px;
+
+}
+
+.icon-for-schools:before {
+	content: "";
+	display:block; 
+	margin: 0px auto;
+	background: url('../images/nav-icons.png') no-repeat 0 -256px;
+	margin-bottom: 7px;
+	width: 21px;
+	height: 25px;
+
+}
+
+#menu li.active {
 	background-color: #e7ebd9;
 	opacity: 1;
 }
@@ -143,7 +236,7 @@ li {
 	text-decoration: none;
 }
 
-#language a:hover {
+#language a:hover, #language a:active {
 	opacity: 1;
 }
 

@@ -8,25 +8,30 @@
 		<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" />
 		<link rel="stylesheet" href="css/main.css" type="text/css" />
 <! 		<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 2)" href="css/iphone.css" type="text/css" />
-		<link rel="stylesheet" media="screen and (max-width: 480px) and (min-width : 320px), only screen and (-webkit-min-device-pixel-ratio: 2)" href="css/iphone.css"  type="text/css" />
+		<link rel="stylesheet" media="screen and (max-width: 480px) and (min-width : 320px)" href="css/iphone.css"  type="text/css" />
 		<link rel="stylesheet" media="screen and (max-width: 1024px) and (min-width: 481px), only screen and (min-device-width : 768px) and (max-device-width: 1024px)" href="css/ipad.css"  type="text/css" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" />
 	</head>
-	<body>
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-		<script src=”bootstrap/js/bootstrap.js”></script>
-		
+	<body ontouchstart="">
 		<div class="frozen-bar">
 			<div class="logo"></div>
 			
 			<div id="menu-wrapper">
 				<a href="#"></a>
 				<nav id="menu">
-					<li class="active"> <a href="#" class="icon-home">home</a> </li>
+					<li class="active"> <a href="#" class="icon-home">Home</a> </li>
 					<li> <a href="#" class="icon-about">About Us</a> </li>
 					<li> <a href="#" class="icon-blog">News/Blog</a> </li>
-					<li> <a href="#" class="icon-services">Recycling<br />services</a> </li>
-					<li> <a href="#" class="icon-partners">partners</a> </li>
+					<li id="services"> <a href="#" class="icon-services">Recycling<br />Services</a> 
+            <div>
+					    <ul>
+					      <li> <div><a href="#" class="icon-for-business">For Business</a></div> </li>
+					      <li> <div><a href="#" class="icon-for-home">For Home</a></div> </li>
+					      <li> <div><a href="#" class="icon-for-schools">For Schools</a></div> </li>
+					    </ul>
+            </div>
+					</li>
+					<li> <a href="#" class="icon-partners">Partners</a> </li>
 					<li> <a href="#" class="icon-involved">Get Involved</a> </li>
 					<li> <a href="#" class="icon-gear">Gear</a>
 				</nav>
@@ -62,6 +67,10 @@
 			</footer>
 		
 		</div>
+
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="bootstrap/js/bootstrap.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
 

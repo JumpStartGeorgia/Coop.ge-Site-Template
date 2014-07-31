@@ -1,0 +1,4 @@
+color codes for different sections:
+green block on home page: #acc563
+orange: #e6984e
+yellow: #ecbc00;

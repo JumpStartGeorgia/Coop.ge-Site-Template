@@ -175,6 +175,7 @@
       var map = L.map('service-home-map',{ zoomControl: false }).setView([41.69337, 44.80149], 13);
       L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
       new L.Control.Zoom({ position: 'topright' }).addTo(map);    
+      map.scrollWheelZoom.disable();
     </script>		
 	</body>
 </html>

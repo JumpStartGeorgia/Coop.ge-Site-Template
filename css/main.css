@@ -254,16 +254,18 @@ li {
 	width: 50%;
 	height: 360px;
 	right: 0;
+	text-align: center;
 }
 #header-home #slogan h1 {
 	position: relative;
-	display: block;
+	display: inline-block;
+	text-align: left;
 	color: #778c38;
 	font-family: 'source_sans_proextralight';
 	line-height: 1.1;
 	font-size: 2.6em;
 	margin: 0 auto;
-	width: 370px;
+/*	width: 370px;*/
 	height: 80px;
 	margin-top: 130px;
 	opacity: 1.0;
@@ -276,7 +278,7 @@ li {
 	background: url('../images/header_bg.jpg') no-repeat content-box center;
 	background-size: cover;
 	position: relative;
-	height: 160px;
+	height: 188px;
 	padding-left: 95px;
 }
 
@@ -284,18 +286,20 @@ li {
 	background-color: rgba(255,255,255,0.8);
 	position: absolute;
 	width: 50%;
-	height: 160px;
+	height: 188px;
 	right: 0;
+	text-align: center;
 }
 #header #slogan h1 {
 	position: relative;
-	display: block;
+	display: inline-block;
+	text-align: left;
 	color: #778c38;
 	font-family: 'source_sans_proextralight';
 	line-height: 1.1;
 	font-size: 2.0em;
 	margin: 0 auto;
-	width: 370px;
+/*	width: 370px;*/
 	height: 50px;
 	margin-top: 50px;
 	opacity: 1.0;
@@ -391,6 +395,7 @@ body .container-fluid {
 	color: #cb7320;
 	font-family: 'source_sans_proextralight';
 	border-bottom: solid 1px #cb7320;
+	padding-bottom: 5px;
 }
 .team-member{
   margin-bottom: 20px;
@@ -602,6 +607,7 @@ body .container-fluid {
   position: relative;
   padding-left: 10px;
   min-height: 40px;
+  font-size: 18px;
 }
 .service-business-how ol > li:before {
   content: counter(business-counter);
@@ -609,10 +615,10 @@ body .container-fluid {
   font-family: 'source_sans_probold';
   position: absolute;
   top: -3px;
-  left: -20px;
-  width: 25px;
-  height: 25px;
-  padding-top: 5px;
+  left: -23px;
+  width: 30px;
+  height: 30px;
+  padding-top: 7px;
   font-size: 14px;
   line-height: 1.2;
   text-align: center;
@@ -682,7 +688,7 @@ body .container-fluid {
   margin-left: 55px;
 }
 .service-business-call{
-  margin: 65px 0 45px;
+  margin: 65px 0 45px -35px !important;
 }
 .service-business-call > div:first-of-type{
   background-color: #acc563;
@@ -775,17 +781,18 @@ body .container-fluid {
   position: relative;
   padding-left: 10px;
   min-height: 10px;
+  font-size: 18px;
 }
 .service-home-how ol > li:before {
   content: counter(home-counter);
   counter-increment: home-counter;
   font-family: 'source_sans_probold';
   position: absolute;
-  top: 0;
-  left: -20px;
-  width: 25px;
-  height: 25px;
-  padding-top: 5px;
+  top: -3px;
+  left: -23px;
+  width: 30px;
+  height: 30px;
+  padding-top: 7px;
   font-size: 14px;
   line-height: 1.2;
   text-align: center;
@@ -820,14 +827,18 @@ body .container-fluid {
 #service-home-map{
   height: 300px;
   margin-bottom: 50px;
+  border-bottom: solid 3px #acc563;
+  margin-left: -35px;
+  margin-right: -35px;
 }
 
 /* faq */
 .faq-item .faq-question{
-  font-weight: bold;
+  font-family: 'source_sans_prosemibold';
   margin-bottom: 3px;
 }
 .faq-item .faq-answer{
+	font-family: 'source_sans_prolight';
   margin-bottom: 20px;
 }
 .faq-item ul.faq-answer{

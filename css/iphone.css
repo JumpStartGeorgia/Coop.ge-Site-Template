@@ -171,7 +171,9 @@ body .container-fluid {
   margin-left: -18px;
   margin-right: -18px;
 }
-
+#service-home-map-container #service-home-map-icon, #service-home-map-container #service-home-map-icon-arrow{
+  display: none;
+}
 
 /* services business*/
 .service-business-how ol li:nth-child(1){

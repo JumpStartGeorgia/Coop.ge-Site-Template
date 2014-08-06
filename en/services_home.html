@@ -18,7 +18,7 @@
 		<meta property="og:description" content="" />
 	  <meta property="og:type" content="non_profit" />
 	  <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="http://coop.ge/images/fb.png" />
 	  <meta property="og:site_name" content="coop.ge" />
 
 	</head>
@@ -89,7 +89,11 @@
               </li>
             </ol>
 
-            <div id="service-home-map"></div>
+            <div id="service-home-map-container">
+              <div id="service-home-map"></div>
+              <div id="service-home-map-icon"></div>
+              <div id="service-home-map-icon-arrow"></div>
+            </div>
     			</div>
 			  </div>
 
@@ -176,6 +180,14 @@
       L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
       new L.Control.Zoom({ position: 'topright' }).addTo(map);    
       map.scrollWheelZoom.disable();
+      var greenIcon = L.icon({
+          iconUrl: '../images/map_logo.png',
+          iconSize:     [80, 80], // size of the icon
+          iconAnchor:   [40, 40], // point of the icon which will correspond to marker's location
+          popupAnchor:  [0, -25] // point from which the popup should open relative to the iconAnchor
+      });
+      L.marker([41.69337, 44.80149], {icon: greenIcon}).addTo(map)
+        .bindPopup('This is a marker!');
     </script>		
 	</body>
 </html>

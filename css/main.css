@@ -614,16 +614,17 @@ body .container-fluid {
   counter-increment: business-counter;
   font-family: 'source_sans_probold';
   position: absolute;
-  top: -3px;
+  top: -5px;
   left: -23px;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.2;
   text-align: center;
   color: #fff;
   border-radius: 50%;
+  border: solid 2px #fff;
   background-color: #a6b37d;
   z-index: 500;
 }
@@ -717,6 +718,18 @@ body .container-fluid {
 }
 .service-business-call > div:first-of-type > div > p:last-of-type{
   font-size: 18px;
+  position: relative;
+  margin-left: 30px;
+}
+.service-business-call > div:first-of-type > div > p:last-of-type:before{
+	content: "";
+	display:inline-block; 
+	background: url('../images/phone_icon.png') no-repeat;
+	width: 25px;
+	height: 24px;
+  position: absolute;
+  top: 0;
+  left: -30px;
 }
 .service-business-faq h3{
 	color: #cb7320;
@@ -788,16 +801,17 @@ body .container-fluid {
   counter-increment: home-counter;
   font-family: 'source_sans_probold';
   position: absolute;
-  top: -3px;
+  top: -5px;
   left: -23px;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.2;
   text-align: center;
   color: #fff;
   border-radius: 50%;
+  border: solid 2px #fff;
   background-color: #a6b37d;
   z-index: 500;
 }
@@ -824,6 +838,9 @@ body .container-fluid {
 	padding-left: 15px;
 	padding-bottom: 5px;
 }
+#service-home-map-container{
+  position: relative;
+}
 #service-home-map{
   height: 300px;
   margin-bottom: 50px;
@@ -831,7 +848,60 @@ body .container-fluid {
   margin-left: -35px;
   margin-right: -35px;
 }
-
+#service-home-map-container #service-home-map-icon{
+	display:inline-block; 
+	background: #fff;
+	width: 100px;
+	height: 100px;
+  position: absolute;
+  top: 100px;
+  left: -35px;
+  z-index: 2000;
+  border-top: solid 2px #acc563;
+  border-bottom: solid 2px #acc563;
+}
+#service-home-map-container #service-home-map-icon:before{
+	content: "";
+	display:inline-block; 
+	background: url('../images/services-icons.png') no-repeat -166px -188px #fff;
+	width: 68px;
+	height: 78px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+#service-home-map-container #service-home-map-icon-arrow{
+	content: "";
+	position: absolute;
+	top:114px;
+	left:29px;
+  z-index: 1999;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Safari and Chrome */
+  -o-transform: rotate(45deg); /* Opera */
+  -moz-transform: rotate(45deg); /* Firefox */
+  background-color:#fff;
+  width:72px;
+  height:72px;
+  -webkit-border-radius: 0 20px 0 0;
+  -moz-border-radius: 0 20px 0 0;
+  border-radius: 0 20px 0 0;
+  border: solid 2px #acc563;
+}
+/*
+#service-home-map-container #service-home-map-icon:after{
+	content: "";
+  width: 0; 
+	height: 0; 
+	border-top: 52px solid transparent;
+	border-bottom: 52px solid transparent;
+	border-left: 52px solid #acc563;
+	position: absolute;
+	top:0;
+	right:-50px;
+}
+*/
 /* faq */
 .faq-item .faq-question{
   font-family: 'source_sans_prosemibold';

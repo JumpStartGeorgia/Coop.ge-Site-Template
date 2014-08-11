@@ -134,6 +134,16 @@ li {
 	height: 23px;
 }
 
+.icon-what:before {
+	content: "";
+	display:block; 
+	margin: 0px auto;
+	background: url('../images/nav-icons.png') no-repeat 0 -281px;
+	margin-bottom: 5px;
+	width: 17px;
+	height: 25px;
+}
+
 .icon-blog:before {
 	content: "";
 	display:block; 
@@ -243,9 +253,13 @@ li {
 #header-home {
 	background: url('../images/header_bg.jpg') no-repeat content-box center;
 	background-size: cover;
-	position: relative;
 	height: 360px;
 	padding-left: 95px;
+	position: fixed;
+	top: 0;
+	left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 #header-home #slogan {
@@ -277,9 +291,13 @@ li {
 #header {
 	background: url('../images/header_bg.jpg') no-repeat content-box center;
 	background-size: cover;
-	position: relative;
 	height: 188px;
 	padding-left: 95px;
+	position: fixed;
+	top: 0;
+	left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 #header #slogan {
@@ -371,6 +389,10 @@ body .container-fluid {
 #main-content{
   padding: 20px;
   font-family: 'source_sans_proregular';
+  margin-top: 188px;
+}
+#header-home + #main-content{
+  margin-top: 360px;
 }
 #main-content a{
   color: #cb7320;
@@ -496,20 +518,13 @@ body .container-fluid {
   font-size: 14px;
 }
 /* get involved */
-#get-involved-row1, #get-involved-row2{
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
-#get-involved-row1 h2{
-	font-family: 'source_sans_proextralight';
-}
-#get-involved-row2 h2{
-  font-family: 'source_sans_proextralight';
+#get-involved-row1 h2, #get-involved-row2 h2{
   color: #cb7320;
+  font-family: 'source_sans_proextralight';
   font-weight: bold;
-}
-#get-involved-row2 h2 span{
   border-bottom: solid 1px #cb7320;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
 #get-involved-row2 div#get-involved-image-box{
   max-width: 885px;
@@ -856,7 +871,7 @@ body .container-fluid {
   position: absolute;
   top: 100px;
   left: -35px;
-  z-index: 2000;
+  z-index: 998;
   border-top: solid 2px #acc563;
   border-bottom: solid 2px #acc563;
 }
@@ -875,7 +890,7 @@ body .container-fluid {
 	position: absolute;
 	top:114px;
 	left:29px;
-  z-index: 1999;
+  z-index: 997;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg); /* IE 9 */
   -webkit-transform: rotate(45deg); /* Safari and Chrome */
@@ -918,3 +933,33 @@ body .container-fluid {
 	content: "- ";
 }
 
+/* partners */
+.partner-header{
+  border-bottom: solid 1px #cb7320;
+}
+.partner-header h2{
+  color: #cb7320;
+  font-family: 'source_sans_proextralight';
+  font-weight: bold;
+  margin-top: 0;
+  padding-top: 8px;
+}
+
+/* what is recycling */
+.what-header{
+  border-bottom: solid 1px #cb7320;
+  margin-bottom: 20px;
+}
+.what-header h2{
+  color: #cb7320;
+  font-family: 'source_sans_proextralight';
+  font-weight: bold;
+  margin-top: 0;
+  padding-top: 8px;
+}
+.what-content ul{
+  padding-left: 25px;
+}
+.what-content li{
+  list-style: disc;
+}

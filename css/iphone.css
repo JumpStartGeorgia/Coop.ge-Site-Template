@@ -4,7 +4,13 @@ body .container-fluid {
 
 #main-content{
   padding: 0;
+  margin-top: 0;
 }
+#header-home + #main-content{
+  padding: 0;
+  margin-top: 0;
+}
+
 .row {
   margin-right: 0px !important;
   margin-left: 0px !important;
@@ -114,10 +120,12 @@ body .container-fluid {
 #header-home {
   padding-left: 0px !important;
   padding-top: 60px !important;
+	position: relative;
 }
 
 #header-home #slogan {
 	background-color: rgba(255,255,255,0.85);
+	height: 295px;
 }
 
 #header-home #slogan h1 {
@@ -130,10 +138,12 @@ body .container-fluid {
 #header {
   padding-left: 0px !important;
   padding-top: 60px !important;
+	position: relative;
 }
 
 #header #slogan {
 	background-color: rgba(255,255,255,0.85);
+	height: 123px;
 }
 
 #header #slogan h1 {

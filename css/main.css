@@ -33,6 +33,11 @@ li {
 	line-height: 1.1;
 }
 
+#menu:lang(ka){
+  font-family: 'dejavu_sans_condensed';
+  font-size: 12px;
+}
+
 #menu li {
 	opacity: 0.7;
 }
@@ -399,6 +404,9 @@ body .container-fluid {
 }
 
 /* home */
+.home-page{
+  font-family: 'source_sans_prolight' !important;
+}
 #home-service-links{
   text-align: center;
   padding: 0 20px;
@@ -441,6 +449,7 @@ body .container-fluid {
 	content: "";
 }
 #home-what-recycling{
+  font-family: 'source_sans_proregular';
   padding: 40px 45px 20px 40px;
   background-color: #acc563;
   color: #fff;
@@ -487,18 +496,50 @@ body .container-fluid {
 #home-how{
   margin-top: 10px;
   margin-bottom: 20px;
-}#home-how h3{
+}
+#home-how h3{
   font-family: 'source_sans_prolight';
 }
 #home-how ol{
   list-style-type: none;
-  counter-reset: business-counter;
+  counter-reset: home-counter;
   padding-left: 6px;
-  margin-left: 20px;
+  margin-left: 2px;
   border-left: solid 2px #a6b37d;
   padding-top: 25px;
   margin-bottom: 0;
 }
+#home-how ol{
+  position: relative;
+}
+#home-how ol:after{
+	content: "";
+	display:block; 
+	margin: 0px auto;
+	background: url('../images/how_big.png') no-repeat;
+	width: 690px;
+	height: 105px;
+	position: absolute;
+	top: 61px;
+	left: 244px;
+}
+@media (max-width: 1100px) {
+  #home-how ol{
+    margin-bottom: 250px;
+  }
+  #home-how ol:after{
+	  content: "";
+	  display:block; 
+	  margin: 0px auto;
+	  background: url('../images/how_small.png') no-repeat;
+	  width: 298px;
+	  height: 235px;
+	  position: absolute;
+	  top: 233px;
+	  left: 20px;
+  }
+}
+
 #home-how ol li{
   position: relative;
   padding-left: 15px;
@@ -506,8 +547,8 @@ body .container-fluid {
   font-size: 16px;
 }
 #home-how ol > li:before {
-  content: counter(business-counter);
-  counter-increment: business-counter;
+  content: counter(home-counter);
+  counter-increment: home-counter;
   font-family: 'source_sans_probold';
   position: absolute;
   top: -5px;
@@ -766,6 +807,12 @@ body .container-fluid {
   position: absolute;
   top: -50px;
 }
+.service-business-how ol li:nth-child(1):lang(ka):after{
+	background: url('../images/services-icons.png') no-repeat 0 -590px;
+	width: 233px;
+	height: 97px;
+}
+
 .service-business-how ol li:nth-child(2){
   padding-left: 110px;
   margin: 35px 0;
@@ -952,12 +999,17 @@ body .container-fluid {
 .service-home-how ol li:first-of-type:after{
 	content: "";
 	display:inline-block; 
-	background: url('../images/services-icons.png') no-repeat 0 -410px;
+	background: url('../images/services-icons.png') no-repeat 0 -418px;
 	width: 208px;
-	height: 90px;
+	height: 85px;
   margin-left: 64px;
   position: absolute;
-  top: -38px;
+  top: -30px;
+}
+.service-home-how ol li:first-of-type:lang(ka):after{
+	background: url('../images/services-icons.png') no-repeat 0 -504px;
+	width: 208px;
+	height: 86px;
 }
 .service-home-faq h3{
 	color: #cb7320;

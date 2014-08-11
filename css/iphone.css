@@ -74,6 +74,9 @@ body .container-fluid {
 	top: 60px;
 	display: none;
 }
+#menu:lang(ka){
+  font-size: 10px;
+}
 
 
 #menu li a {
@@ -86,6 +89,9 @@ body .container-fluid {
   height: 73px;
   padding-left: 5px;
 }
+#menu li#services > div:lang(ka){
+  width: 270px;
+}
 #menu li#services > div.active{
   left: 90px;
 	opacity: 1;
@@ -93,6 +99,9 @@ body .container-fluid {
 #menu li#services > div > ul{
   height: 73px;
 	font-size: 12px;
+}
+#menu li#services > div > ul:lang(ka){
+	font-size: 10px;
 }
 #menu li#services > div > ul > li{
 	width: 80px;
@@ -166,12 +175,12 @@ body .container-fluid {
 .service-home-how ol li:first-of-type:after{
   content: "";
   display:inline-block; 
-  background: url('../images/services-icons.png') no-repeat 0 -410px;
+  background: url('../images/services-icons.png') no-repeat 0 -418px;
   width: 208px;
-  height: 90px;
+  height: 85px;
   margin-left: 0;
   position: absolute;
-  top: 91px;
+  top: 99px;
   left: 11px;
 }
 .service-home-how ol > li:last-of-type:before {

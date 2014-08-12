@@ -64,42 +64,46 @@
 			</div>
 			
 			<div id="main-content" class="home-page">
-			  <div class="row">
+			  <div class="row" id="row1">
     			<div class="col-sm-6" id="home-service-links">
-    			  <h2>Recycle with <b>Coop Georgia</b></h2>
-    			  <p>
-    			  Our recycling services are available for businesses, schools, and individuals.  Start recycling today!
-            </p>
-            <ul>
-              <li>
-                <a href="./services_business.html">Sign up your Business</a>
-              </li>
-              <li>
-                <a href="./services_home.html">Recycle at Home</a>
-              </li>
-              <li>
-                <a href="./services_schools.html">Recycling in Schools</a>
-              </li>
-            </ul>
+    			  <div>
+      			  <h2>Recycle with <b>Coop Georgia</b></h2>
+      			  <p>
+      			  Our recycling services are available for businesses, schools, and individuals.  Start recycling today!
+              </p>
+              <ul>
+                <li>
+                  <a href="./services_business.html">Sign up your Business</a>
+                </li>
+                <li>
+                  <a href="./services_home.html">Recycle at Home</a>
+                </li>
+                <li>
+                  <a href="./services_schools.html">Recycling in Schools</a>
+                </li>
+              </ul>
+            </div>
     			</div>
     			<div class="col-sm-6" id="home-bins">
             <img src="../images/recycle_bins.jpg" alt="coop.ge recycle bins"/>
     			</div>
 			  </div>
 
-			  <div class="row">
+			  <div class="row" id="row2">
     			<div class="col-sm-6" id="home-what-recycling">
-    			  <h3>What is Recycling?</h3>
-    			  <p>
-    			    Recycling is the process of using waste materials to create new products.  
-    			    Instead of burying our waste in landfills which threaten the environment, 
-    			    we can return it to the resource pool, thereby reducing the extraction and consumption of new raw materials from the earth.
-              Recycling reduces energy usage, air pollution and water pollution, which in turn offers us all healthier lives.  
-              By responsibly separating our waste, we have a positive impact by protecting the environment, conserving energy, and keeping Georgia beautiful.
-    			  </p>
-    			  <p>
-    			    <a href="./what_is_recycling.html">Continue reading...</a>
-    			  </p>
+    			  <div>
+      			  <h3>What is Recycling?</h3>
+      			  <p>
+      			    Recycling is the process of using waste materials to create new products.  
+      			    Instead of burying our waste in landfills which threaten the environment, 
+      			    we can return it to the resource pool, thereby reducing the extraction and consumption of new raw materials from the earth.
+                Recycling reduces energy usage, air pollution and water pollution, which in turn offers us all healthier lives.  
+                By responsibly separating our waste, we have a positive impact by protecting the environment, conserving energy, and keeping Georgia beautiful.
+      			  </p>
+      			  <p>
+      			    <a href="./what_is_recycling.html">Continue reading...</a>
+      			  </p>
+            </div>
     			</div>
     			<div class="col-sm-6" id="home-blog">
     			  <h3>News/Blog</h3>
@@ -159,6 +163,43 @@
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script src="../bootstrap/js/bootstrap.js"></script>
 		<script src="../js/main.js"></script>
+		<script>
+      function resize_home_blocks(){
+        var heights_row1 = [];
+        var heights_row2 = [];
+        if ($('.home-page #row1 > div:first-of-type').css('float') != 'none'){
+          $('.home-page #row1 > div').each(function(){
+            $(this).height('auto');
+            heights_row1.push($(this).height());
+          });
+          $('.home-page #row1 > div').each(function() { $(this).height(Math.max.apply(Math, heights_row1)); });
+          var row1_text_height = $('.home-page #row1 > div:first-of-type > div').height();
+          var margin_top = (Math.max.apply(Math, heights_row1) - row1_text_height)/2;
+          $('.home-page #row1 > div:first-of-type > div').css('margin-top', margin_top.toString() + 'px');
+
+          $('.home-page #row2 > div').each(function(){
+            $(this).height('auto');
+            heights_row2.push($(this).height());
+          });
+          $('.home-page #row2 > div').each(function() { $(this).height(Math.max.apply(Math, heights_row2)); });
+        }else{
+          $('.home-page #row1 > div').each(function(){
+            $(this).height('auto');
+          });
+          $('.home-page #row2 > div').each(function(){
+            $(this).height('auto');
+          });
+          $('.home-page #row1 > div:first-of-type > div').css('margin-top', '0px');
+        }
+      }
+
+      $(document).ready(function(){
+        resize_home_blocks();
+        $(window).resize(function(){
+          resize_home_blocks();
+        });
+      });
+    </script>
 	</body>
 </html>
 

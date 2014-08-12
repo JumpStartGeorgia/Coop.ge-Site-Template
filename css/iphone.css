@@ -167,6 +167,21 @@ body .container-fluid {
 	padding-left: 0;
 }
 
+/* home page */
+#home-how ol{
+  margin-bottom: 270px;
+}
+#home-how ol:after{
+  content: "";
+  display:block; 
+  margin: 0px auto;
+  background: url('../images/how_small.png') no-repeat;
+  width: 298px;
+  height: 235px;
+  position: absolute;
+  top: 280px;
+  left: 20px;
+}
 
 /* services home */
 .service-home-how ol li:first-of-type{

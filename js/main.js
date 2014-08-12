@@ -6,11 +6,5 @@ $(document).ready(function(){
     e.preventDefault();
     $(this).find('> div').removeClass('active');
   });
-/*
-  $("#menu > li#services").bind('touchstart touchend', function(e) {
-    e.preventDefault();
-    $(this).find('> div').toggleClass('active');
-  });
-*/  
 });
   

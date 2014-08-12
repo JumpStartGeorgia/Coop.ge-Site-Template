@@ -407,10 +407,12 @@ body .container-fluid {
 .home-page{
   font-family: 'source_sans_prolight' !important;
 }
-#home-service-links{
-  text-align: center;
-  padding: 0 20px;
+#home-service-links > div{
+/*  padding: 0 20px;*/
 } 
+#home-service-links ul{
+  padding-left: 0;
+}
 #home-service-links ul li{
   display: inline-block;
   margin-right: 5px;
@@ -450,7 +452,6 @@ body .container-fluid {
 }
 #home-what-recycling{
   font-family: 'source_sans_proregular';
-  padding: 40px 45px 20px 40px;
   background-color: #acc563;
   color: #fff;
   margin-left: -20px !important;
@@ -465,6 +466,9 @@ body .container-fluid {
   border-right: 55px solid;
   width: 0;
 }
+#home-what-recycling > div{
+ padding: 40px 45px 0px 23px;
+}
 #home-what-recycling h3{
   margin-top: 0;
   font-family: 'source_sans_proextralight'; 
@@ -475,10 +479,10 @@ body .container-fluid {
 }
 #home-blog{
   padding-left: 27px;
+  border-bottom: solid 1px #ecbc00;
 }
 #home-blog #blog-items{
   padding-left: 0;
-  border-bottom: solid 1px #ecbc00;
 }
 #home-blog #blog-items li {
   font-family: 'source_sans_prolight';

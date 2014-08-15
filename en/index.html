@@ -55,7 +55,7 @@
 		
 		<div class="container-fluid">
 			
-			<div class="row" id="header-home">
+			<div class="row home" id="header">
   			<div class="col-sm-12">
   				<header id="slogan">
   					<h1><b>Sort</b> Your Waste <br /><b>Protect</b> the Environment</h1>
@@ -197,6 +197,24 @@
         resize_home_blocks();
         $(window).resize(function(){
           resize_home_blocks();
+        });
+
+        var shrinkHeader = true;
+        if ($(window).width() < 480){
+          shrinkHeader = false;
+        }
+        function getCurrentScroll() {
+          return window.pageYOffset || document.documentElement.scrollTop;
+        }
+        $(window).scroll(function() {
+          if (shrinkHeader){
+            var scroll = getCurrentScroll();
+            if ( scroll == 0 ) {
+               $('#header').addClass('home');
+            }else {
+              $('#header').removeClass('home');
+            }
+          }
         });
       });
     </script>

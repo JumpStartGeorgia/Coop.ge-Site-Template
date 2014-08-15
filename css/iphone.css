@@ -6,7 +6,7 @@ body .container-fluid {
   padding: 0;
   margin-top: 0;
 }
-#header-home + #main-content{
+#header.home + #main-content{
   padding: 0;
   margin-top: 0;
 }
@@ -126,24 +126,6 @@ body .container-fluid {
 }
 
 	
-#header-home {
-  padding-left: 0px !important;
-  padding-top: 60px !important;
-	position: relative;
-}
-
-#header-home #slogan {
-	background-color: rgba(255,255,255,0.85);
-	height: 295px;
-}
-
-#header-home #slogan h1 {
-	font-size: 1.1em;
-	font-family: 'source_sans_prolight';
-/*	width: 165px;*/
-	height: 40px;
-}
-
 #header {
   padding-left: 0px !important;
   padding-top: 60px !important;
@@ -162,6 +144,26 @@ body .container-fluid {
 	height: 40px;
 	margin-top: 60px;
 }
+
+#header.home {
+  padding-left: 0px !important;
+  padding-top: 60px !important;
+	position: relative;
+}
+
+#header.home #slogan {
+	background-color: rgba(255,255,255,0.85);
+	height: 295px;
+}
+
+#header.home #slogan h1 {
+	font-size: 1.1em;
+	font-family: 'source_sans_prolight';
+/*	width: 165px;*/
+	height: 40px;
+}
+
+
 
 #footer {
 	padding-left: 0;
